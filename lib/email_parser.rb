@@ -22,7 +22,8 @@ class EmailAddressParser
       address.delete!(" ")
     end
 
-    
+    @parsed_email =  @email_addresses.split(/,)
+
     @parsed_email
   end
 end
