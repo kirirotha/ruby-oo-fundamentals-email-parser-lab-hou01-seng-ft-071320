@@ -20,10 +20,10 @@ class EmailAddressParser
     end
     #@parsed_email.each do |address|
     #  address.delete!(" ")
-    #end
+    end
 
     #@parsed_email =  @email_addresses.split(/,|\s|,\s/)
-    @parsed_email =  @email_addresses.split(",")
+
     @parsed_email
   end
 end
