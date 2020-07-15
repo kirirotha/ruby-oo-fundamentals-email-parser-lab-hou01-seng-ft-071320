@@ -10,11 +10,11 @@ class EmailAddressParser
   
   
   def parse
-    if email_addresses.include?(",")
-      email_addresses.delete!(" ")
-      @parsed_email =  email_addresses.split(",")
+    if @email_addresses.include?(",")
+      @email_addresses.delete!(" ")
+      @parsed_email =  @email_addresses.split(",")
     else
-      @parsed_email = email_addresses.split(" ")
+      @parsed_email = @email_addresses.split(" ")
     end
     @parsed_email
   end
