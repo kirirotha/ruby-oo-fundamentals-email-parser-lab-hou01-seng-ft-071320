@@ -18,6 +18,11 @@ class EmailAddressParser
     else
       @parsed_email = @email_addresses.split(" ")
     end
+    @parsed_email.each do
+      @email_addresses.delete!(" ")
+    end
+
+    
     @parsed_email
   end
 end
